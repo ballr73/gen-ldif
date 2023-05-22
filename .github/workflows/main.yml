@@ -31,7 +31,7 @@ jobs:
 
       - name: Compress artifacts
         run: |
-          tar czf cldif-${{ github.ref_name }}.tar.gz cldif
+          tar czf gen-ldif-${{ github.ref_name }}.tar.gz gen-ldif
 
       - name: Upload compressed artifacts
         uses: actions/upload-release-asset@v1
@@ -39,7 +39,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: cldif-${{ github.ref_name }}.tar.gz
-          asset_name: cldif-${{ github.ref_name }}.tar.gz
+          asset_path: gen-ldif-${{ github.ref_name }}.tar.gz
+          asset_name: gen-ldif-${{ github.ref_name }}.tar.gz
           asset_content_type: application/gzip
 
