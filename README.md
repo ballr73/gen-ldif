@@ -6,7 +6,7 @@ To run the program, follow the steps below:
 1. **Run the progam:**
 
    ```bash
-   ./gen-ldif <entries> <output file name>s
+   ./gen-ldif <entries> <output file name>
 
 ## Running the Docker Image
 
