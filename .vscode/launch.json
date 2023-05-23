@@ -9,7 +9,7 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceRoot}/bin/gen-ldif",
-            "args": ["file1.ldif", "file2.ldif", "output.ldif"],
+            "args": ["-v"],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [],

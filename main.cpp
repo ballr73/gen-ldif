@@ -14,7 +14,7 @@ int main(int argc, char* argv[]) {
     string arg1 = argv[1];
     // Check if the count and output file name arguments are provided
     if(argc == 2 && arg1 == "-v") {
-        cout << "gen-ldif version v0.0.3" << endl;
+        cout << "gen-ldif version v0.0.4" << endl;
         return 1;
     }
     else if (argc != 3) {
