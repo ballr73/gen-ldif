@@ -11,11 +11,18 @@ int generateRandomUid() {
 }
 
 int main(int argc, char* argv[]) {
+    string arg1 = argv[1];
     // Check if the count and output file name arguments are provided
-    if (argc != 3) {
+    if(argc == 2 && arg1 == "-v") {
+        cout << "gen-ldif version v0.0.3" << endl;
+        return 1;
+    }
+    else if (argc != 3) {
         cerr << "Usage: ./ldif_generator <count> <output_file>" << endl;
         return 1;
     }
+
+
 
     int count = atoi(argv[1]);
     string outputFileName = argv[2];
