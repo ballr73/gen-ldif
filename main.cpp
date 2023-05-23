@@ -5,7 +5,7 @@
 
 using namespace std;
 
-const string version = "v0.0.4";
+const string APP_VERSION = "v0.0.4";
 
 // Function to generate a random 12-digit integer
 int generateRandomUid() {
@@ -20,10 +20,9 @@ int main(int argc, char* argv[]) {
     string arg1 = argv[1];
     // Check if the count and output file name arguments are provided
     if(argc == 2 && arg1 == "-v") {
-        cout << "gen-ldif version " << version << "" << endl;
+        cout << "gen-ldif version " << APP_VERSION << "" << endl;
         return 1;
     }
-
 
     int count = atoi(argv[1]);
     string outputFileName = argv[2];
